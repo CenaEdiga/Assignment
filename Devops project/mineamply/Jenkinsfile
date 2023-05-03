@@ -1,0 +1,10 @@
+pipeline{
+agent any
+stages{
+stage('git scm clone'){
+steps{
+sh 'git clone https://gitlab.com/CenaEdiga/mineamply.git -b master'
+}
+}
+}
+}
